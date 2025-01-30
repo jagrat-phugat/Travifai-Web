@@ -7,6 +7,7 @@ import Hero from "./components/Hero/Hero.jsx";
 import MacbookProComponent from "./components/MacbookProComponent/MacbookProComponent.jsx"
 import Inovation from "./components/Inovation/Inovation.jsx";
 import Controller from "./components/Controller/Controller.jsx";
+import Testimonials from "./components/Testimonials/Testimonials.jsx";
 const App = () => {
   return (
     <div>
@@ -17,6 +18,7 @@ const App = () => {
     <Controller />
     {/* <Features />
     <Newsletter /> */}
+    <Testimonials/>
       <Footer />
     </div>
   );

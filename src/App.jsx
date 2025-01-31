@@ -9,6 +9,7 @@ import Inovation from "./components/Inovation/Inovation.jsx";
 import Controller from "./components/Controller/Controller.jsx";
 import Testimonials from "./components/Testimonials/Testimonials.jsx";
 import Description from "./components/Description/Description.jsx";
+import Faq from "./components/Faq/Faq.jsx";
 const App = () => {
   return (
     <div>
@@ -20,6 +21,7 @@ const App = () => {
     {/* <Features />
     <Newsletter /> */}
     <Description />
+    <Faq />
     <Testimonials/>
       <Footer />
     </div>

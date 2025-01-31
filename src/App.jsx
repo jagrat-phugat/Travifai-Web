@@ -8,6 +8,7 @@ import MacbookProComponent from "./components/MacbookProComponent/MacbookProComp
 import Inovation from "./components/Inovation/Inovation.jsx";
 import Controller from "./components/Controller/Controller.jsx";
 import Testimonials from "./components/Testimonials/Testimonials.jsx";
+import Description from "./components/Description/Description.jsx";
 const App = () => {
   return (
     <div>
@@ -18,6 +19,7 @@ const App = () => {
     <Controller />
     {/* <Features />
     <Newsletter /> */}
+    <Description />
     <Testimonials/>
       <Footer />
     </div>

@@ -15,10 +15,10 @@ const Footer = () => {
       </p>
       <div className="mt-8 flex gap-4">
         <button className="px-6 py-3 text-white bg-purple-600 rounded-full shadow-lg hover:bg-purple-700 hover:shadow-xl transition duration-300">
-          Get Started
+          Download Now
         </button>
       </div>
-
+        
       {/* Footer Section */}
       <div className="container mx-auto px-4 pt-12 pb-6 lg:pt-16 lg:pb-10">
         <div className="grid gap-12 lg:gap-8 lg:grid-cols-6">

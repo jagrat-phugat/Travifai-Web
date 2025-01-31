@@ -26,6 +26,7 @@ const Features = () => {
         "24/7 customer support to ensure your business runs smoothly. We're here whenever you need us.",
       icon: "💬",
     },
+    
   ];
 
   return (

@@ -6,9 +6,9 @@ const Innovation = () => {
         {/* Left: Heading */}
         <div className="text-center md:text-left flex-1">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-black leading-tight">
-            Efficiency Meets{' '}
+          Travel Smarter With{' '}
             <span className="text-purple-600 bg-yellow-100 px-0 py-0.5 rounded-md text-[2.9rem]">
-              Innovation
+              Travifai
             </span>
           </h1>
         </div>

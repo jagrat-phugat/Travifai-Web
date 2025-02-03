@@ -15,9 +15,10 @@ const LandingPage = () => {
     <main className="w-full overflow-x-hidden">
       <>
         <Hero />
+        <Controller />
         <Innovation />
         <MacbookProComponent />
-        <Controller />
+        
         <WhyUs />
         {/* Uncomment if needed */}
         {/* <Features />

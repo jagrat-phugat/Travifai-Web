@@ -35,7 +35,7 @@ const WhyUs = () => {
         {/* Black Buttons with GIF in Between */}
         <div className="flex flex-col items-center space-y-4">
           <div className="bg-black text-white px-6 py-3 rounded-full shadow-lg text-lg font-semibold">
-            LET'S SCALE YOUR BRAND ONLINE.
+            LETS SCALE YOUR BRAND ONLINE.
           </div>
           
           {/* Image Between the Buttons */}

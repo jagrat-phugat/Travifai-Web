@@ -1,4 +1,4 @@
-import React from 'react';
+
 
 const testimonials = [
   {
@@ -44,7 +44,7 @@ const Testimonials = () => {
       {/* Header Section */}
       <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-black leading-tight mb-4">
         Discover the World Through <br />
-        Our Travelers'{" "}
+        Our Travelers{" "}
         <span className="text-purple-600 bg-yellow-100 px-0 py-0.5 rounded-md text-[2.9rem]">
           Eyes!
         </span>

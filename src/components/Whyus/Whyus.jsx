@@ -3,6 +3,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import gifImage from "../../assets/giphy.gif";
 import { motion } from "framer-motion";
+import { FaRocket, FaLightbulb, FaRegHandshake, FaChartBar, FaStar } from "react-icons/fa"; // Example icons from Font Awesome
 
 const WhyUs = () => {
   const settings = {
@@ -21,11 +22,11 @@ const WhyUs = () => {
   };
 
   const features = [
-    { icon: "🔮", title: "Client-Centric Approach", description: "We tailor our strategies to maximize impact and ROI." },
-    { icon: "🌟", title: "Transparency and Integrity", description: "We maintain open, honest communication with clear insights." },
-    { icon: "🚀", title: "Empowering Businesses", description: "We help clients scale operations to new heights with strategic guidance." },
-    { icon: "💡", title: "Innovative Solutions", description: "We leverage the latest technology for innovative strategies." },
-    { icon: "📊", title: "Data-Driven Decisions", description: "Analytics and insights drive our continuous performance growth." },
+    { icon: <FaRegHandshake />, title: "Client-Centric Approach", description: "We tailor our strategies to maximize impact and ROI." },
+    { icon: <FaStar />, title: "Transparency and Integrity", description: "We maintain open, honest communication with clear insights." },
+    { icon: <FaRocket />, title: "Empowering Businesses", description: "We help clients scale operations to new heights with strategic guidance." },
+    { icon: <FaLightbulb />, title: "Innovative Solutions", description: "We leverage the latest technology for innovative strategies." },
+    { icon: <FaChartBar />, title: "Data-Driven Decisions", description: "Analytics and insights drive our continuous performance growth." },
   ];
 
   return (
@@ -76,19 +77,19 @@ const WhyUs = () => {
               whileHover={{ scale: 1.1 }}
               transition={{ type: "spring", stiffness: 300 }}
             >
-              <div className="relative bg-white/10 backdrop-blur-lg border border-white/20 shadow-xl p-6 rounded-2xl flex flex-col items-center text-center hover:shadow-2xl hover:bg-opacity-20 transition-all group"
-                   style={{ height: "350px", minWidth: "280px", overflow: "hidden" }} // Ensuring uniform size
+              <div className="relative bg-white/10 backdrop-blur-lg border border-white/20 shadow-xl p-8 rounded-3xl flex flex-col items-center text-center hover:shadow-2xl hover:bg-opacity-20 transition-all group"
+                   style={{ height: "400px", minWidth: "280px", overflow: "hidden" }} // Ensuring uniform size
               >
                 {/* Glowing Gradient Border */}
-                <div className="absolute inset-0 rounded-2xl border-2 border-transparent group-hover:border-purple-500 transition-all"></div>
+                <div className="absolute inset-0 rounded-3xl border-2 border-transparent group-hover:border-purple-500 transition-all"></div>
 
                 {/* Icon with Hover Effect */}
                 <motion.div
-                  className="w-16 h-16 flex items-center justify-center bg-gradient-to-r from-purple-500 to-indigo-500 rounded-full mb-4 text-4xl text-white shadow-lg group-hover:scale-110 transition-all"
+                  className="w-20 h-20 flex items-center justify-center bg-gradient-to-r from-purple-500 to-indigo-500 rounded-full mb-4 text-5xl text-white shadow-xl group-hover:scale-110 transition-all"
                   animate={{ rotate: [0, 10, -10, 0] }}
                   transition={{ duration: 0.8, repeat: Infinity, ease: "easeInOut" }}
                 >
-                  <span role="img" aria-label="icon">{feature.icon}</span>
+                  {feature.icon}
                 </motion.div>
 
                 {/* Title with Text Animation */}

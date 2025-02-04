@@ -16,9 +16,7 @@ const Innovation = () => {
         {/* Right: Paragraph */}
         <div className="flex-1">
           <p className="text-gray-600 text-lg md:text-xl">
-            Whether you are a small business owner, a finance professional, or
-            an individual seeking better control over your finances, FundForge
-            is your comprehensive solution.
+          Welcome to Travifai, your smart travel companion! We provide personalized recommendations and seamless booking options to make your journey effortless. Travel smarter and create unforgettable memories with us!
           </p>
         </div>
       </div>
@@ -35,7 +33,7 @@ const Innovation = () => {
               d="M17 9V7a4 4 0 00-8 0v2M5 12h14l-1 9H6l-1-9z"
             />
           }
-          title="Payment Options"
+          title="Booking Platform "
           description="Convenient and hassle-free, our easy payment options streamline your purchasing experience."
         />
 
@@ -57,7 +55,7 @@ const Innovation = () => {
               />
             </>
           }
-          title="Strong Security"
+          title="B2B/D2C proposal Maker"
           description="With cutting-edge encryption technologies and robust protocols, we safeguard your data against cyber threats."
         />
 
@@ -71,7 +69,7 @@ const Innovation = () => {
               d="M9.75 21h4.5a1.75 1.75 0 001.75-1.75v-1.5A1.75 1.75 0 0014.25 16h-4.5A1.75 1.75 0 008 17.75v1.5c0 .966.784 1.75 1.75 1.75zM5 7h14a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2V9a2 2 0 012-2z"
             />
           }
-          title="24/7 Support"
+          title="Reservatioon & Order Tracker"
           description="Our dedicated team is here around the clock to provide you with immediate assistance and solutions."
         />
 
@@ -85,7 +83,7 @@ const Innovation = () => {
               d="M12 8c-3.314 0-6 2.686-6 6s2.686 6 6 6 6-2.686 6-6-2.686-6-6-6zm0-3v3m0 10v3m-5-5H4m16 0h-3m-8-8l-2-2m10 10l2 2"
             />
           }
-          title="AI-Powered Insights"
+          title="Biz Bridge"
           description="Leverage AI-driven analytics for smarter financial decisions and strategic growth."
         />
 
@@ -99,7 +97,7 @@ const Innovation = () => {
               d="M5 13l4 4L19 7"
             />
           }
-          title="Seamless Integration"
+          title="Invoice Manager"
           description="Easily integrate our solutions with your existing financial tools for a smooth workflow."
         />
 
@@ -113,7 +111,7 @@ const Innovation = () => {
               d="M3 4h18M4 8h16M5 12h14M6 16h12M7 20h10"
             />
           }
-          title="User-Friendly Dashboard"
+          title="Employee Management System"
           description="A clean, intuitive interface designed for effortless navigation and better financial control."
         />
       </div>

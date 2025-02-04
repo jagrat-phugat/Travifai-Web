@@ -1,6 +1,6 @@
 
 import Hero from "../components/Hero/Hero.jsx";
-import MacbookProComponent from "../components/MacbookProComponent/MacbookProComponent.jsx";
+//    import MacbookProComponent from "../components/MacbookProComponent/MacbookProComponent.jsx";
 import Innovation from "../components/Inovation/Inovation.jsx"; 
 import Controller from "../components/Controller/Controller.jsx";
 import Testimonials from "../components/Testimonials/Testimonials.jsx";

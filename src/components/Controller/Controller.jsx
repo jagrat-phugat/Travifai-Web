@@ -13,7 +13,9 @@ const Controller = () => {
       individual seeking better control over your finances, FundForge is your
       comprehensive solution.
     </p>
-   
+    <div className="bg-black text-white px-6 py-3 rounded-full shadow-lg text-lg font-semibold">
+            Download.
+          </div>
     </div>
    
   )

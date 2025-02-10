@@ -2,39 +2,23 @@ import UXUIImage from "/src/assets/UX-UI-services.png";
 
 const Controller = () => {
   return (
-<<<<<<< HEAD
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-r from-yellow-100 via-purple-100 to-purple-200 text-center p-6">
-    {/* Header Section */}
-    <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-black leading-tight mb-4">
-      Transform the Way You <br />
-      Manage Your <span className="text-purple-600 bg-yellow-100 px-0 py-0.5 rounded-md text-[2.9rem]">Finances</span>
-    </h1>
-    <p className="mt-2 text-lg text-gray-700 max-w-2xl">
-      Whether you are a small business owner, a finance professional, or an
-      individual seeking better control over your finances, FundForge is your
-      comprehensive solution.
-    </p>
-    <div className="bg-black text-white px-6 py-3 rounded-full shadow-lg text-lg font-semibold">
-            Download.
-          </div>
-    </div>
-   
-  )
-}
-=======
     <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-r from-yellow-100 via-purple-100 to-purple-200 px-4 sm:px-6 lg:px-12 py-12">
       
       {/* Header & Button Container */}
       <div className="w-full max-w-4xl flex flex-col sm:flex-row justify-between items-center text-center sm:text-left">
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900">
-          Our Expertise,<br /> <span className="text-purple-600">Your Advantage</span>
-        </h2>
->>>>>>> c9dc2dad9e6913f64edbfe02f37bdf8fc068c12f
+      <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-black leading-tight mb-4">
+      Empowering Hoteliers, Travel Agencies, and Travelers {" "}
+        <span className="text-purple-600 bg-yellow-100 px-2 py-1 rounded-md text-[2.9rem]">
+        TravifAi
+        </span>
+      </h1>
 
         {/* View All Button at Right End */}
+        <a href="/about"> 
         <button className="mt-4 sm:mt-0 px-6 py-2 bg-black text-white rounded-full hover:bg-gray-800 transition">
-          View All
+          Know more
         </button>
+        </a>
       </div>
 
       {/* Sections */}
@@ -42,16 +26,16 @@ const Controller = () => {
         
         {/* Graphic Design */}
         <div className="grid grid-cols-1 sm:grid-cols-2 items-start gap-6 border-b py-6">
-          <h3 className="text-lg sm:text-xl font-semibold text-gray-800">Graphic Design</h3>
+          <h3 className="text-lg sm:text-xl font-semibold text-gray-800">TravifAi For Hoteliers</h3>
           <p className="text-gray-600 text-left">
-            From eye-catching visuals to brand-defining graphics, we create designs that communicate your story and captivate your audience.
+          TravifAi eliminates commission fees, allowing hoteliers to maximize revenue while managing bookings, rates, and inventory seamlessly. With cloud-based PMS, POS, and booking engine integration, hoteliers can track real-time business performance, enhance visibility, and automate marketing for better guest engagement.
           </p>
         </div>
 
         {/* UI/UX Design with Image */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 items-center gap-6 border-b py-6">
           <h3 className="text-lg sm:text-xl font-semibold text-yellow-500 lg:col-span-1 text-center sm:text-left">
-            UI/UX Design
+          TravifAi For Travel Agencies
           </h3>
 
           {/* Image in the middle */}
@@ -65,15 +49,15 @@ const Controller = () => {
 
           {/* Description aligned to the right */}
           <p className="text-gray-600 text-left lg:col-span-1">
-            We design user-centric interfaces and experiences that not only look stunning but also ensure seamless navigation and engagement for your audience.
+          Travel agencies gain instant access to hotel inventories, real-time availability, and transparent pricing without intermediaries. The platform simplifies deal negotiations, automates proposal generation, and provides marketing tools to attract travelers while ensuring commission-free transactions.
           </p>
         </div>
 
         {/* Website Development */}
         <div className="grid grid-cols-1 sm:grid-cols-2 items-start gap-6 py-6">
-          <h3 className="text-lg sm:text-xl font-semibold text-gray-800">Website Development</h3>
+          <h3 className="text-lg sm:text-xl font-semibold text-gray-800">TravifAi For Travelers</h3>
           <p className="text-gray-600 text-left">
-            Our websites are built to perform—responsive, fast, and optimized for all devices, ensuring your online presence stands out.
+          Travelers enjoy highly competitive room rates with a commission-free, transparent booking process. The platform offers personalized recommendations, direct communication with hoteliers, secure payments, and 24/7 customer support for a seamless travel experience.
           </p>
         </div>
       </div>

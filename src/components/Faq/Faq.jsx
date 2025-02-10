@@ -2,19 +2,29 @@ import { useState } from "react";
 
 const faqData = [
   {
-    question: "Q. What is Travifai?",
+    question: "Q. What is Travifai?  ",
     answer:
-      "Travifai is a comprehensive financial management solution designed for small businesses and individuals.",
+      "Travifai is a revolutionary platform designed to connect travelers, hoteliers, travel agencies, and taxi owners, offering a seamless and commission-free travel experience.",
   },
   {
-    question: "Q. How does Travifai help small businesses?",
+    question: "Q. How does Travifai benefit travelers? ",
     answer:
-      "Travifai provides tools for budgeting, expense tracking, and financial reporting to help small businesses manage their finances effectively.",
+    "Travelers can enjoy a wide range of services, including easy access to accommodations, transportation options, and personalized travel planning—all without incurring commission fees.",
   },
   {
-    question: "Q. Is Travifai suitable for personal finance management?",
+    question: "Q. How can travel agencies utilize Travifai? ",
     answer:
-      "Yes, Travifai offers features that cater to personal finance management, allowing individuals to track their expenses and savings.",
+      "Travel agencies can leverage Travifai’s tools and resources to optimize bookings, enhance customer service, and collaborate with other stakeholders in the travel ecosystem.",
+  },
+  {
+    question: "Q. How do I stay updated on Travifai's launch and features? ",
+    answer:
+       "You can sign up for updates on our website or follow us on social media to be the first to know about our launch and new features!",
+  },
+  {
+    question: "Q. Are there any fees for hoteliers and taxi owners to join Travifai? ",
+    answer:
+      "No, Travifai operates on a commission-free model, allowing hoteliers and taxi owners to showcase their services without any hidden fees.",
   },
 ];
 
@@ -32,14 +42,13 @@ const Faq = () => {
             </span>
           </h1>
           <p className="text-gray-600 text-lg md:text-xl mt-4">
-            Whether you are a small business owner, a finance professional, or
-            an individual seeking better control over your finances, Travifai is
-            your comprehensive solution.
-          </p>
+          Dive Deep into the World of Travifai: Your Comprehensive Guide to Our Innovative Travel Platform, Designed to Connect Travelers with Hoteliers, Travel Agencies, and Taxi Owners for a Seamless and Enjoyable Travel Experience!</p>
           <div className="mt-6">
-            <button className="px-6 py-3 text-white bg-purple-600 rounded-full shadow-lg hover:bg-purple-700 transition duration-300">
-              Download Now
-            </button>
+          <a href="YOUR_LINK_HERE" className="mt-8">
+  <button className="px-6 py-3 text-white bg-purple-600 rounded-full shadow-lg hover:bg-purple-700 hover:shadow-xl transition duration-300">
+    Download Now
+  </button>
+</a>
           </div>
         </div>
 

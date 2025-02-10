@@ -3,34 +3,35 @@ import myImage from "../../assets/frame.png";
 const descriptions = [
   {
     id: 1,
-    text: "I got connected to a provider, from the same community as me. So they understand the issue that I may have.",
+    text: "Commission-Free Online Booking – Zero commission fees for hoteliers, travelers, and travel agents.",
     bgColor: "bg-yellow-200",
   },
   {
     id: 2,
-    text: "I got connected to a provider, from the same community as me. So they understand the issue that I may have.",
+    text: "H & T Connect – Direct communication between hoteliers and travel agents for seamless deal management.",
     bgColor: "bg-green-200",
   },
   {
     id: 3,
-    text: "I got connected to a provider, from the same community as me. So they understand the issue that I may have.",
+    text: "Unified Booking & Inventory Manager – Manage rates, inventory, and bookings across multiple platforms from one interface.",
     bgColor: "bg-blue-200",
   },
   {
     id: 4,
-    text: "I got connected to a provider, from the same community as me. So they understand the issue that I may have.",
+    text: "Daily Insights & Reports – Real-time analytics on bookings, revenue, expenses, and business performance.",
     bgColor: "bg-red-200",
   },
   {
     id: 5,
-    text: "I got connected to a provider, from the same community as me. So they understand the issue that I may have.",
+    text: "Marketing & Reputation Management – Automated digital marketing, proposal creation, and review analysis for brand growth.",
     bgColor: "bg-purple-200",
   },
   {
     id: 6,
-    text: "I got connected to a provider, from the same community as me. So they understand the issue that I may have.",
+    text: "Cloud-Based Business Solutions – Integrated PMS, POS, booking engine, manpower management, and customer support.",
     bgColor: "bg-indigo-200",
   },
+  
 ];
 
 const Description = () => {
@@ -38,21 +39,21 @@ const Description = () => {
     <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-r from-yellow-100 via-purple-100 to-purple-200 text-center p-6">
       {/* Header Section */}
       <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-black leading-tight mb-4">
-        Transform the Way You <br />
-        Manage Your{" "}
+      Revolutionizing the Travel &  <br />
+      Hospitality Industry{" "}
         <span className="text-purple-600 bg-yellow-100 px-2 py-1 rounded-md text-[2.9rem]">
-          Finances
+        TravifAi
         </span>
       </h1>
       <p className="mt-2 text-lg text-gray-700 max-w-2xl">
-        Whether you are a small business owner, a finance professional, or an
-        individual seeking better control over your finances, FundForge is your
-        comprehensive solution.
+      A Commission-Free, Cloud-Based Solution Empowering Hoteliers, Travel Agencies, and Travelers with Seamless Bookings and Real-Time Business Insights
       </p>
       <div className="mt-8 flex gap-4">
-        <button className="px-6 py-3 text-white bg-purple-600 rounded-full shadow-lg hover:bg-purple-700 transition duration-300">
-          Download Now
-        </button>
+      <a href="YOUR_LINK_HERE" className="mt-8">
+  <button className="px-6 py-3 text-white bg-purple-600 rounded-full shadow-lg hover:bg-purple-700 hover:shadow-xl transition duration-300">
+    Download Now
+  </button>
+</a>
       </div>
 
       {/* Main Content Section */}
@@ -74,7 +75,7 @@ const Description = () => {
           <img
             src={myImage}
             alt="Description"
-            className="w-64 md:w-76 lg:w-93 h-auto rounded-lg shadow-lg"
+            className="w-64 md:w-76 lg:w-90 h-auto rounded-lg shadow-lg"
           />
         </div>
 

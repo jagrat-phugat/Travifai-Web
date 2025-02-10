@@ -8,6 +8,7 @@ import Description from "../components/Description/Description.jsx";
 import Faq from "../components/Faq/Faq.jsx";
 import WhyUs from "../components/Whyus/Whyus.jsx"; 
 import Blank from "../components/Blank/Blank.jsx";
+import Contact from "../components/Contact/Contact.jsx";
 // import Features from "./components/Features/Features.jsx";
 // import Newsletter from "./components/Newsletter/Newsletter.jsx";
 
@@ -17,7 +18,7 @@ const LandingPage = () => {
       <>
         <Hero />
         <Innovation />
-        <Controller />
+        
        
         {/* <MacbookProComponent /> */}
         
@@ -25,11 +26,13 @@ const LandingPage = () => {
         {/* Uncomment if needed */}
         {/* <Features />
         <Newsletter /> */}
+        <Controller />
         <Description />
         <Faq />
         <Blank />
         <Blank />
         <Testimonials />
+        <Contact />
       </>
     </main>
   );

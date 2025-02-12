@@ -44,7 +44,9 @@ const HeroSection = () => {
         >
           Together Karein Explore, <br />
           Mil Kar Badhe More{" "}
-          <span className="text-purple-600 bg-yellow-100 px-2">Travifai</span>
+          <span className="text-purple-600 bg-yellow-100 px-2 py-1 rounded-md text-[2.9rem]">
+        TravifAi
+        </span>
         </h1>
       </div>
       <p

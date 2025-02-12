@@ -16,7 +16,7 @@ const Controller = () => {
         {/* View All Button at Right End */}
         <a href="/about"> 
         <button className="mt-4 sm:mt-0 px-6 py-2 bg-black text-white rounded-full hover:bg-gray-800 transition">
-          Know more
+          Blog
         </button>
         </a>
       </div>

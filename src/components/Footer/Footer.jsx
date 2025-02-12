@@ -27,8 +27,8 @@ const Footer = () => {
       {/* Header Section */}
       <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-black leading-tight mb-4">
       Your Gateway to a Seamless <br/> Travel Experience!{" "}
-        <span className="text-purple-600 bg-yellow-100 px-2 py-1 rounded-md">
-        Travafai
+      <span className="text-purple-600 bg-yellow-100 px-2 py-1 rounded-md text-[2.9rem]">
+        TravifAi
         </span>
       </h1>
       <p className="mt-2 text-lg text-gray-700 max-w-2xl">
@@ -61,7 +61,7 @@ const Footer = () => {
           <div className="grid grid-cols-2 gap-4 lg:col-span-4 md:grid-cols-4">
             {[
               { title: "Category", links: ["Home", "About", "Blog", "Contacts"] },
-              { title: "Business", links: ["Web", "eCommerce", "Portfolio", "Entertainment"] },
+              { title: "Business", links: ["Hotels", "Travel Agencies", "Travelers", "Taxi Owners"] },
               { title: "Resources", links: ["Media", "Brochure", "Nonprofit", "Educational"] },
               { title: "Explore", links: ["Infopreneur", "Personal", "Wiki", "Forum"] },
             ].map((section, index) => (

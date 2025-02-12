@@ -5,6 +5,7 @@ import TestimonialsPage from "./pages/TestimonialsPage.jsx";
 import AboutPage from "./pages/AboutPage.jsx";
 import LandingPage from "./pages/LandingPage.jsx";
 import ContactPage from "./pages/ContactPage.jsx";
+import ServicesPage from "./pages/ServicesPage.jsx";
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
             <Route path="/testimonials" element={<TestimonialsPage />} />
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/about" element={<AboutPage />} />
+            <Route path="/services" element={<ServicesPage />} />
             {/* Future 404 Page */}
             {/* <Route path="*" element={<NotFoundPage />} /> */}
           </Routes>

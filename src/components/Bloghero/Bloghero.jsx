@@ -1,79 +1,79 @@
 import React, { useState } from "react";
-import { motion } from "framer-motion";
+import myImage from "../../assets/left.png";
+import myImage2 from "../../assets/right.png";
 
-const Bloghero = () => {
+const Abouthero = () => {
   const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
+  const [error, setError] = useState("");
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    if (!email) return;
+  const validateEmail = (email) => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Basic email validation pattern
+    return emailRegex.test(email);
+  };
 
-    const formUrl = "https://formspree.io/f/YOUR_FORM_ID"; // Replace with your Formspree/W3 Form ID
-
-    try {
-      const response = await fetch(formUrl, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email, message: `Subscription request for TravifAi blog.` })
-      });
-      if (response.ok) {
-        setMessage("Thank you for subscribing! Check your email.");
-        setEmail("");
-      } else {
-        setMessage("Something went wrong. Try again.");
-      }
-    } catch (error) {
-      setMessage("Error submitting form. Try again.");
+  const handleSubscribe = () => {
+    if (!email) {
+      setError("Please enter your email.");
+    } else if (!validateEmail(email)) {
+      setError("Please enter a valid email address.");
+    } else {
+      alert(`Subscribed with: ${email}`);
+      setEmail(""); // Clear input after subscribing
+      setError(""); // Clear error after successful submission
     }
   };
 
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 50 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.8 }}
-      className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-r from-yellow-100 via-purple-100 to-purple-200 text-center p-6"
-    >
-      {/* Header Section */}
-      <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-black leading-tight mb-4">
-      Navigating the Future of Travel &  <br /> Hospitality Industry {" "}
-        <span className="text-purple-600 bg-yellow-100 px-2 py-1 rounded-md text-[2.9rem]">
-          TravifAi
-        </span>
-      </h1>
-      <p className="mt-2 text-lg text-gray-700 max-w-2xl">
-      From AI-Powered Solutions to Smarter Bookings – Explore the Future of Travel.Expert Tips, Industry Insights, and Tech Breakthroughs for Modern Travelers.
+    <div className="flex flex-col items-center min-h-screen bg-gradient-to-r from-yellow-100 via-purple-100 to-purple-200 text-center p-6 relative">
+      {/* Blog Heading */}
+      <div className="text-6xl font-bold mt-4 translate-y-40">
+        Wander More, Worry Less <br /> Travel the World with Us!
+      </div>
+      <p className="text-lg mt-4 translate-y-40">
+        Unveiling Hidden Gems & Travel Stories from Around the World!
       </p>
-      
-      {/* Subscription Form */}
-      <motion.div
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
-        className="mt-6 flex flex-wrap gap-3"
-      >
-        <form onSubmit={handleSubmit} className="flex flex-col md:flex-row gap-3">
+
+      {/* Email Subscription Box */}
+      <div className="mt-6 flex flex-col items-center translate-y-40">
+        <div className="flex items-center border border-gray-400 rounded-full overflow-hidden shadow-md">
           <input
             type="email"
-            placeholder="Enter email"
+            placeholder="Enter your email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            required
-            className="px-4 py-3 w-full md:w-auto border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 transition"
+            className="px-4 py-2 w-64 outline-none text-gray-700 bg-white"
           />
           <button
-            type="submit"
-            className="px-6 py-3 bg-purple-600 text-white rounded-lg shadow-md hover:bg-purple-700 hover:shadow-lg transition duration-300"
+            onClick={handleSubscribe}
+            className="bg-purple-600 hover:bg-purple-700 text-white px-5 py-2 font-semibold transition-all duration-300"
           >
-            NOTIFY ME
+            Subscribe
           </button>
-        </form>
-      </motion.div>
+        </div>
 
-      {message && <p className="mt-4 text-green-600">{message}</p>}
-    </motion.div>
+        {/* Error Message */}
+        {error && <p className="text-red-600 mt-2">{error}</p>}
+      </div>
+
+      {/* Right-Aligned Image */}
+      <div className="absolute bottom-0 right-0">
+        <img 
+          src={myImage} 
+          alt="Hero Section" 
+          className="w-80 max-w-xl h-auto object-contain -translate-y-20"
+        />
+      </div>
+
+      <div className="absolute bottom-0 left-0">
+        <img 
+          src={myImage2} 
+          alt="Hero Section" 
+          className="w-80 max-w-xl h-auto object-contain -translate-y-20"
+        />
+      </div>
+
+    </div>
   );
 };
 
-export default Bloghero;
+export default Abouthero;

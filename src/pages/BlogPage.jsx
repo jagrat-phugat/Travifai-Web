@@ -1,14 +1,15 @@
 
 
 import Bloghero from "../components/Bloghero/Bloghero.jsx";
-import Blogs from "../components/Blogs/Blogs.jsx";
-
+import FeaturedBlog from "../components/FeaturedBlog/FeaturedBlog.jsx";
+import AllBlogs from "../components/AllBlogs/AllBlogs.jsx";
 const BlogPage = () => {
   return (
     <main className="w-full overflow-x-hidden">
       <>
         <Bloghero />
-        <Blogs/>
+        <FeaturedBlog/>
+        <AllBlogs />
       </>
     </main>
   );

@@ -5,24 +5,28 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
+  const menuItems = [
+    { name: "Home", path: "/" },
+    { name: "About Us", path: "/about" },
+    { name: "Services", path: "/services" },
+    { name: "Blog", path: "/blog" },
+    { name: "Testimonials", path: "/testimonials" }
+  ];
+
+  const closeMenu = () => setIsOpen(false);
+
   return (
     <nav className="bg-gradient-to-r from-yellow-100 via-purple-100 to-purple-200 shadow-lg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          {/* Logo Text */}
+          {/* Logo */}
           <Link to="/" className="flex items-center text-2xl font-extrabold text-purple-800 animate-pulse">
             TRAVIFAI
           </Link>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-8">
-            {[
-              { name: "Home", path: "/" },
-              { name: "About Us", path: "/about" },
-              { name: "Services", path: "/services" },
-              { name: "Blog", path: "/blog" },
-              { name: "Testimonials", path: "/testimonials" }
-            ].map((item, index) => (
+            {menuItems.map((item, index) => (
               <Link
                 key={index}
                 to={item.path}
@@ -71,7 +75,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile Side Navigation */}
+      {/* Mobile Fullscreen Navigation */}
       <AnimatePresence>
         {isOpen && (
           <motion.div
@@ -79,38 +83,36 @@ const Navbar = () => {
             animate={{ x: 0 }}
             exit={{ x: "100%" }}
             transition={{ type: "spring", stiffness: 100, damping: 15 }}
-            className="fixed top-0 right-0 w-64 h-full bg-gradient-to-r from-yellow-100 via-purple-100 to-purple-200 shadow-xl p-5 z-50"
+            className="fixed top-0 right-0 w-full h-full bg-gradient-to-r from-yellow-100 via-purple-100 to-purple-200 shadow-xl p-5 z-50 flex flex-col"
           >
+            {/* Close Button */}
             <button
-              onClick={() => setIsOpen(false)}
-              className="text-gray-700 text-2xl absolute top-4 right-4 hover:text-black"
+              onClick={closeMenu}
+              className="text-gray-700 text-3xl absolute top-4 right-6 hover:text-black"
             >
               ✖
             </button>
-            <div className="mt-10 space-y-6 text-lg">
-              {[
-                { name: "Home", path: "/" },
-                { name: "About Us", path: "/about" },
-                { name: "Blog", path: "/blog" },
-                { name: "Pages", path: "/pages" },
-                { name: "Testimonials", path: "/testimonials" }
-              ].map((item, index) => (
+
+            {/* Mobile Menu Items */}
+            <div className="mt-20 space-y-8 text-center text-lg">
+              {menuItems.map((item, index) => (
                 <motion.div
                   key={index}
-                  className="block text-gray-700 hover:text-black transform hover:scale-110 transition"
-                  onClick={() => setIsOpen(false)}
+                  className="text-gray-700 hover:text-black transform hover:scale-110 transition"
                 >
-                  <Link to={item.path}>{item.name}</Link>
+                  <Link to={item.path} onClick={closeMenu}>{item.name}</Link>
                 </motion.div>
               ))}
             </div>
-            <div className="border-t border-gray-300 mt-5 pt-5">
+
+            {/* Bottom Buttons */}
+            <div className="mt-auto pb-10 text-center">
               <span className="text-gray-700">EN</span>
-              <div className="flex space-x-4 mt-3">
+              <div className="flex flex-col space-y-4 mt-5">
                 <button className="px-4 py-2 bg-purple-600 text-white rounded-full hover:bg-purple-700 transition transform hover:scale-105">
                   Download App
                 </button>
-                <Link to="/contact" className="px-4 py-2 border border-purple-600 text-purple-600 rounded-full hover:bg-purple-100 transition transform hover:scale-105">
+                <Link to="/contact" onClick={closeMenu} className="px-4 py-2 border border-purple-600 text-purple-600 rounded-full hover:bg-purple-100 transition transform hover:scale-105">
                   Contact Us
                 </Link>
               </div>

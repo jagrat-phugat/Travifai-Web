@@ -62,8 +62,8 @@ const Footer = () => {
             {[
               { title: "Category", links: ["Home", "About", "Blog", "Contacts"] },
               { title: "Business", links: ["Hotels", "Travel Agencies", "Travelers", "Taxi Owners"] },
-              { title: "Resources", links: ["Media", "Brochure", "Nonprofit", "Educational"] },
-              { title: "Explore", links: ["Infopreneur", "Personal", "Wiki", "Forum"] },
+              { title: "Blogs", links: ["Travel Tips", "Travifai Brochure", "Travel Places", "About App"] },
+              { title: "Social Media", links: ["WhatsApp", "Email", "LinkedIn", "Instagram"] },
             ].map((section, index) => (
               <div key={index}>
                 <p className="font-semibold text-black mb-2">{section.title}</p>

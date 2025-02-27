@@ -3,7 +3,11 @@ import { Canvas } from "@react-three/fiber";
 import { Environment, ScrollControls } from "@react-three/drei";
 import MacContainer from "../MacContainer/MacContainer.jsx";
 import "../Hero/hero.css";
-
+const handleButtonClick = () => {
+  // Replace with your Google Form URL
+  const googleFormUrl = 'https://docs.google.com/forms/d/11Wwr5BWetz6rNxONkqO6WCyDq-vZQ4EdbPCqVApXbOs/edit';
+  window.open(googleFormUrl, '_blank'); // Opens the form in a new tab
+};
 const HeroSection = () => {
   const [isVisible, setIsVisible] = useState(false);
   const heroRef = useRef(null);
@@ -64,9 +68,12 @@ const HeroSection = () => {
         <button className="px-6 py-3 text-white bg-purple-600 rounded-full hover:bg-purple-700 transition">
           Get Started
         </button>
-        <button className="px-6 py-3 text-purple-600 bg-white border border-purple-600 rounded-full hover:bg-purple-100 transition">
-          Learn More
-        </button>
+        <button
+      className="px-6 py-3 text-purple-600 bg-white border border-purple-600 rounded-full hover:bg-purple-100 transition"
+      onClick={handleButtonClick}
+    >
+      Reach Us
+    </button>
       </div>
 
       {/* 3D Model Section */}

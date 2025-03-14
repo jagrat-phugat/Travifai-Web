@@ -22,7 +22,7 @@ const MacContainer = () => {
   }, [size.width]);
 
   const model = useGLTF("/model/mac.glb");
-  const tex = useTexture("/model/red.jpg");
+  const tex = useTexture("/model/red.png");
 
   // Store references to mesh objects
   const meshes = useMemo(() => {

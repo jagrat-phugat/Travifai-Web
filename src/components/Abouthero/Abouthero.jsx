@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import myImage from "../../assets/Abouthero.png";
+
 
 const Abouthero = () => {
   return (
@@ -13,10 +13,11 @@ const Abouthero = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
       >
-        Revolutionizing the Travel & <br />
-        Hospitality Industry{" "}
+        Your Host, Never a Ghost! 
+        <br />
+        Your Transparent Travel Partner{" "}
         <span className="text-purple-600 bg-yellow-100 px-2 py-1 rounded-md text-[2.9rem]">
-          TravifAi
+          Travifai
         </span>
       </motion.h1>
 
@@ -38,7 +39,7 @@ const Abouthero = () => {
         animate={{ opacity: 1, scale: 1 }}
         transition={{ delay: 0.5, duration: 0.5 }}
       >
-        <a href="YOUR_LINK_HERE">
+        <a href="\home">
           <button className="px-6 py-3 text-white bg-purple-600 rounded-full shadow-lg hover:bg-purple-700 hover:shadow-xl transition duration-300">
             Download Now
           </button>
@@ -53,11 +54,7 @@ const Abouthero = () => {
         viewport={{ once: true }}
         transition={{ duration: 1 }}
       >
-        <img 
-          src={myImage} 
-          alt="Hero Section" 
-          className="w-full max-w-3xl object-contain"
-        />
+        
       </motion.div>
 
     </div>

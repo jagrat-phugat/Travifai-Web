@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import myImage from "../../assets/left.png"; // Ensure this image is optimized
+import myImage from "../../assets/left.png";
+ // Ensure this image is optimized
 
 const Bloghero = () => {
   const [email, setEmail] = useState("");

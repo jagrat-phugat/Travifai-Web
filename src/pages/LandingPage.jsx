@@ -9,6 +9,9 @@ import Faq from "../components/Faq/Faq.jsx";
 import WhyUs from "../components/Whyus/Whyus.jsx"; 
 import Blank from "../components/Blank/Blank.jsx";
 import Contact from "../components/Contact/Contact.jsx";
+import OurMission from "../components/Ourmission/Ourmission.jsx"
+import OurValues from "../components/Our Values/OurValues.jsx"
+import WhoAreWe from "../components/WhoAreWe/WhoAreWe.jsx"
 // import Features from "./components/Features/Features.jsx";
 // import Newsletter from "./components/Newsletter/Newsletter.jsx";
 
@@ -17,21 +20,24 @@ const LandingPage = () => {
     <main className="w-full overflow-x-hidden">
       <>
         <Hero />
-        <Innovation />
         
-       
-        {/* <MacbookProComponent /> */}
         
+        <WhoAreWe />
+        <OurMission />
+        <OurValues />
+        {/* <MacbookProComponent /> 
         <WhyUs />
-        {/* Uncomment if needed */}
+        <Innovation />
+        {/* Uncomment if needed
         {/* <Features />
-        <Newsletter /> */}
+        <Newsletter /> 
         <Controller />
         <Description />
         <Faq />
         <Blank />
         <Blank />
-        <Testimonials />
+        <Testimonials />  */}
+        
         <Contact />
       </>
     </main>

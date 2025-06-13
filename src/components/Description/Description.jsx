@@ -31,7 +31,6 @@ const descriptions = [
     text: "Cloud-Based Business Solutions – Integrated PMS, POS, booking engine, manpower management, and customer support.",
     bgColor: "bg-indigo-200",
   },
-  
 ];
 
 const Description = () => {
@@ -39,21 +38,29 @@ const Description = () => {
     <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-r from-yellow-100 via-purple-100 to-purple-200 text-center p-6">
       {/* Header Section */}
       <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-black leading-tight mb-4">
-      Revolutionizing the Travel &  <br />
-      Hospitality Industry{" "}
+        Revolutionizing the Travel & <br />
+        Hospitality Industry{" "}
         <span className="text-purple-600 bg-yellow-100 px-2 py-1 rounded-md text-[2.9rem]">
-        TravifAi
+          TravifAi
         </span>
       </h1>
       <p className="mt-2 text-lg text-gray-700 max-w-2xl">
-      A Commission-Free, Cloud-Based Solution Empowering Hoteliers, Travel Agencies, and Travelers with Seamless Bookings and Real-Time Business Insights
+        A Commission-Free, Cloud-Based Solution Empowering Hoteliers, Travel
+        Agencies, and Travelers with Seamless Bookings and Real-Time Business
+        Insights
       </p>
       <div className="mt-8 flex gap-4">
-      <a href="YOUR_LINK_HERE" className="mt-8">
-  <button className="px-6 py-3 text-white bg-purple-600 rounded-full shadow-lg hover:bg-purple-700 hover:shadow-xl transition duration-300">
-    Download Now
-  </button>
-</a>
+        <a href="/" className="mt-8">
+          <a
+            href="https://drive.google.com/drive/folders/1liA5eO53qs80svbI7eHA0UwZ6LKMEXZ1"
+            download
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-4 py-2 bg-purple-600 text-white rounded-full hover:bg-purple-700 transition transform hover:scale-105 inline-block"
+          >
+            Download App
+          </a>
+        </a>
       </div>
 
       {/* Main Content Section */}

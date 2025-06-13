@@ -41,9 +41,9 @@ const Footer = () => {
         hoteliers, travel agencies, and taxi owners, revolutionizing the way you
         experience travel!
       </p>
-      <a href="YOUR_LINK_HERE" className="mt-8">
+      <a href="/" className="mt-8">
         <a
-          href="/travifai.apk"
+          href="https://drive.google.com/drive/folders/1liA5eO53qs80svbI7eHA0UwZ6LKMEXZ1"
           download
           target="_blank"
           rel="noopener noreferrer"

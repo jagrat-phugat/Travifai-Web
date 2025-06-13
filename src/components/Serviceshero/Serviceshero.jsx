@@ -1,19 +1,19 @@
-import React, { useEffect } from 'react';
-import image1 from '../../assets/image1.png';
-import image2 from '../../assets/image2.png';
-import image3 from '../../assets/image3.png';
-import image4 from '../../assets/image4.png';
+import React, { useEffect } from "react";
+import image1 from "../../assets/image1.png";
+import image2 from "../../assets/image2.png";
+import image3 from "../../assets/image3.png";
+import image4 from "../../assets/image4.png";
 
 const ServicesHero = () => {
   useEffect(() => {
-    const elements = document.querySelectorAll('.animate-on-scroll');
+    const elements = document.querySelectorAll(".animate-on-scroll");
 
     const observer = new IntersectionObserver(
       (entries, observer) => {
-        entries.forEach(entry => {
+        entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.classList.add('opacity-100', 'translate-y-0');
-            entry.target.classList.remove('opacity-0', 'translate-y-10');
+            entry.target.classList.add("opacity-100", "translate-y-0");
+            entry.target.classList.remove("opacity-0", "translate-y-10");
             observer.unobserve(entry.target);
           }
         });
@@ -21,7 +21,7 @@ const ServicesHero = () => {
       { threshold: 0.2 }
     );
 
-    elements.forEach(element => observer.observe(element));
+    elements.forEach((element) => observer.observe(element));
   }, []);
 
   return (
@@ -58,15 +58,23 @@ const ServicesHero = () => {
           </span>
         </h1>
         <p className="mt-4 text-lg sm:text-xl text-gray-800 leading-relaxed">
-          A <strong>Commission-Free, Cloud-Based</strong> Solution Empowering Hoteliers, Travel Agencies, and Travelers with Seamless Bookings & Real-Time Insights.
+          A <strong>Commission-Free, Cloud-Based</strong> Solution Empowering
+          Hoteliers, Travel Agencies, and Travelers with Seamless Bookings &
+          Real-Time Insights.
         </p>
 
         {/* CTA Button */}
         <div className="mt-8 sm:mt-10">
-          <a href="YOUR_LINK_HERE">
-            <button className="px-6 sm:px-8 py-3 sm:py-4 text-white font-semibold text-base sm:text-lg bg-gradient-to-r from-purple-600 to-purple-800 rounded-full shadow-lg hover:scale-105 hover:shadow-2xl transition-transform duration-300">
+          <a href="/">
+            <a
+              href="https://drive.google.com/drive/folders/1liA5eO53qs80svbI7eHA0UwZ6LKMEXZ1"
+              download
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-4 py-2 bg-purple-600 text-white rounded-full hover:bg-purple-700 transition transform hover:scale-105 inline-block"
+            >
               🚀 Download Now
-            </button>
+            </a>
           </a>
         </div>
       </div>

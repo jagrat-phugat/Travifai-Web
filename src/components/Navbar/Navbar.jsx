@@ -44,7 +44,7 @@ const Navbar = () => {
           <div className="hidden md:flex items-center space-x-4">
             <span className="text-gray-700">EN</span>
             <a
-              href="/travifai.apk"
+              href="https://drive.google.com/drive/folders/1liA5eO53qs80svbI7eHA0UwZ6LKMEXZ1"
               download
               target="_blank"
               rel="noopener noreferrer"
@@ -123,9 +123,15 @@ const Navbar = () => {
             <div className="mt-auto pb-10 text-center">
               <span className="text-gray-700">EN</span>
               <div className="flex flex-col space-y-4 mt-5">
-                <button className="px-4 py-2 bg-purple-600 text-white rounded-full hover:bg-purple-700 transition transform hover:scale-105">
+                <a
+                  href="https://drive.google.com/drive/folders/1liA5eO53qs80svbI7eHA0UwZ6LKMEXZ1"
+                  download
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-4 py-2 bg-purple-600 text-white rounded-full hover:bg-purple-700 transition transform hover:scale-105 inline-block"
+                >
                   Download App
-                </button>
+                </a>
                 <Link
                   to="/contact"
                   onClick={closeMenu}

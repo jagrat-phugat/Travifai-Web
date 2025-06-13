@@ -34,10 +34,16 @@ const ContactHero = () => {
 
       {/* Download Button */}
       <motion.div className="mt-8 flex gap-4" variants={fadeInUp}>
-        <a href="YOUR_LINK_HERE">
-          <button className="px-6 py-3 text-white bg-purple-600 rounded-full shadow-lg hover:bg-purple-700 hover:shadow-xl transition duration-300">
-            Download Now
-          </button>
+        <a href="/">
+          <a
+            href="https://drive.google.com/drive/folders/1liA5eO53qs80svbI7eHA0UwZ6LKMEXZ1"
+            download
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-4 py-2 bg-purple-600 text-white rounded-full hover:bg-purple-700 transition transform hover:scale-105 inline-block"
+          >
+            Download App
+          </a>
         </a>
       </motion.div>
 
@@ -75,7 +81,9 @@ const ContactHero = () => {
           </div>
           <h3 className="mt-4 text-lg font-semibold text-gray-800">Email Us</h3>
           <p className="text-gray-600">Click to send an email</p>
-          <p className="mt-2 text-gray-900 font-semibold">travifai2024@gmail.com</p>
+          <p className="mt-2 text-gray-900 font-semibold">
+            travifai2024@gmail.com
+          </p>
         </motion.a>
 
         {/* Call or Text Us */}
@@ -96,8 +104,8 @@ const ContactHero = () => {
       </motion.div>
 
       <motion.p className="mt-10 text-gray-600 text-sm" variants={fadeInUp}>
-        We'll get back to you as soon as possible. Our team is available
-        8am-6pm on weekdays.
+        We'll get back to you as soon as possible. Our team is available 8am-6pm
+        on weekdays.
       </motion.p>
     </motion.div>
   );

@@ -10,7 +10,7 @@ const Navbar = () => {
     { name: "About Us", path: "/about" },
     { name: "Services", path: "/services" },
     { name: "Blog", path: "/blog" },
-    { name: "Testimonials", path: "/testimonials" }
+    { name: "Testimonials", path: "/testimonials" },
   ];
 
   const closeMenu = () => setIsOpen(false);
@@ -20,7 +20,10 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link to="/" className="flex items-center text-2xl font-extrabold text-purple-800 animate-pulse">
+          <Link
+            to="/"
+            className="flex items-center text-2xl font-extrabold text-purple-800 animate-pulse"
+          >
             TRAVIFAI
           </Link>
 
@@ -40,10 +43,19 @@ const Navbar = () => {
           {/* Right Buttons */}
           <div className="hidden md:flex items-center space-x-4">
             <span className="text-gray-700">EN</span>
-            <button className="px-4 py-2 bg-purple-600 text-white rounded-full hover:bg-purple-700 transition transform hover:scale-105">
+            <a
+              href="/travifai.apk"
+              download
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-4 py-2 bg-purple-600 text-white rounded-full hover:bg-purple-700 transition transform hover:scale-105 inline-block"
+            >
               Download App
-            </button>
-            <Link to="/contact" className="px-4 py-2 border border-purple-600 text-purple-600 rounded-full hover:bg-purple-100 transition transform hover:scale-105">
+            </a>
+            <Link
+              to="/contact"
+              className="px-4 py-2 border border-purple-600 text-purple-600 rounded-full hover:bg-purple-100 transition transform hover:scale-105"
+            >
               Contact Us
             </Link>
           </div>
@@ -100,7 +112,9 @@ const Navbar = () => {
                   key={index}
                   className="text-gray-700 hover:text-black transform hover:scale-110 transition"
                 >
-                  <Link to={item.path} onClick={closeMenu}>{item.name}</Link>
+                  <Link to={item.path} onClick={closeMenu}>
+                    {item.name}
+                  </Link>
                 </motion.div>
               ))}
             </div>
@@ -112,7 +126,11 @@ const Navbar = () => {
                 <button className="px-4 py-2 bg-purple-600 text-white rounded-full hover:bg-purple-700 transition transform hover:scale-105">
                   Download App
                 </button>
-                <Link to="/contact" onClick={closeMenu} className="px-4 py-2 border border-purple-600 text-purple-600 rounded-full hover:bg-purple-100 transition transform hover:scale-105">
+                <Link
+                  to="/contact"
+                  onClick={closeMenu}
+                  className="px-4 py-2 border border-purple-600 text-purple-600 rounded-full hover:bg-purple-100 transition transform hover:scale-105"
+                >
                   Contact Us
                 </Link>
               </div>

@@ -9,7 +9,7 @@ const faqData = [
   {
     question: "Q. How does Travifai benefit travelers? ",
     answer:
-    "Travelers can enjoy a wide range of services, including easy access to accommodations, transportation options, and personalized travel planning—all without incurring commission fees.",
+      "Travelers can enjoy a wide range of services, including easy access to accommodations, transportation options, and personalized travel planning—all without incurring commission fees.",
   },
   {
     question: "Q. How can travel agencies utilize Travifai? ",
@@ -19,10 +19,11 @@ const faqData = [
   {
     question: "Q. How do I stay updated on Travifai's launch and features? ",
     answer:
-       "You can sign up for updates on our website or follow us on social media to be the first to know about our launch and new features!",
+      "You can sign up for updates on our website or follow us on social media to be the first to know about our launch and new features!",
   },
   {
-    question: "Q. Are there any fees for hoteliers and taxi owners to join Travifai? ",
+    question:
+      "Q. Are there any fees for hoteliers and taxi owners to join Travifai? ",
     answer:
       "No, Travifai operates on a commission-free model, allowing hoteliers and taxi owners to showcase their services without any hidden fees.",
   },
@@ -42,13 +43,23 @@ const Faq = () => {
             </span>
           </h1>
           <p className="text-gray-600 text-lg md:text-xl mt-4">
-          Dive Deep into the World of Travifai: Your Comprehensive Guide to Our Innovative Travel Platform, Designed to Connect Travelers with Hoteliers, Travel Agencies, and Taxi Owners for a Seamless and Enjoyable Travel Experience!</p>
+            Dive Deep into the World of Travifai: Your Comprehensive Guide to
+            Our Innovative Travel Platform, Designed to Connect Travelers with
+            Hoteliers, Travel Agencies, and Taxi Owners for a Seamless and
+            Enjoyable Travel Experience!
+          </p>
           <div className="mt-6">
-          <a href="YOUR_LINK_HERE" className="mt-8">
-  <button className="px-6 py-3 text-white bg-purple-600 rounded-full shadow-lg hover:bg-purple-700 hover:shadow-xl transition duration-300">
-    Download Now
-  </button>
-</a>
+            <a href="YOUR_LINK_HERE" className="mt-8">
+              <a
+                href="/travifai.apk"
+                download
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-4 py-2 bg-purple-600 text-white rounded-full hover:bg-purple-700 transition transform hover:scale-105 inline-block"
+              >
+                Download App
+              </a>
+            </a>
           </div>
         </div>
 
@@ -56,7 +67,11 @@ const Faq = () => {
         <div className="flex-1">
           <div className="w-full max-w-2xl">
             {faqData.map((faq, index) => (
-              <FaqItem key={index} question={faq.question} answer={faq.answer} />
+              <FaqItem
+                key={index}
+                question={faq.question}
+                answer={faq.answer}
+              />
             ))}
           </div>
         </div>

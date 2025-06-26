@@ -7,6 +7,7 @@ import Description from "../components/Description/Description.jsx";
 import Faq from "../components/Faq/Faq.jsx";
 import WhyUs from "../components/Whyus/Whyus.jsx";
 import Blank from "../components/Blank/Blank.jsx";
+import Footer from "../components/Footer/Footer.jsx";
 // import Contact from "../components/Contact/Contact.jsx";
 // import OurMission from "../components/Ourmission/Ourmission.jsx";
 // import OurValues from "../components/Our Values/OurValues.jsx";
@@ -27,6 +28,7 @@ const LandingPage = () => {
         <Blank />
         <Blank />
         <Testimonials />
+        <Footer /> 
       </>
     </main>
   );

@@ -58,6 +58,12 @@ const Navbar = () => {
             >
               Contact Us
             </Link>
+            <Link
+              to="/login"
+              className="px-4 py-2 border bg-purple-600 text-white rounded-full hover:bg-purple-700 transition transform hover:scale-105"
+            >
+              Login/Signup
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
